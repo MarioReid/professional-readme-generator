@@ -17,8 +17,6 @@ function generateMarkdown(data) {
 
   ## Description
   ${data.description}
-
-  ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)<br />
   
   ## Table of Contents
   - [Description](#description)
@@ -34,12 +32,6 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
-
-  ## License
-  ![badge](https://img.shields.io/badge/license-${data.license}-brightgreen)
-  <br />
-  This application is covered by the ${data.license} license. 
-
 
   ## Contributing
   ${data.contributing}
