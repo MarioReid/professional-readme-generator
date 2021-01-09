@@ -24,9 +24,44 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "What is this project usage for?", 
+        message: "What is this project usage?", 
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "Please indicate the contributors of this project:"
+    },
+    {
+        type: "input",
+        name: "tests",
+        message: "Is there a test?"
+    },
+    {   
+        type: "list",
+        name: "license",
+        message: "Which license would you like to use?",
+        choices: [
+            "MIT",
+            "Apache",
+            "Mozilla"]
+    },
+    
+    {
+        type: "input",
+        name: "questions",
+        message: "What do I do if I have an issue? "
+    },
+    {
+        type: "input",
+        name: "username",
+        message: "Please enter your GitHub username: "
+    },
+    {
+    type: "input",
+    name: "email",
+    message: "Please enter your email: "
     }
-];
+]
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
