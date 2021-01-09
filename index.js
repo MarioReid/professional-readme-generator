@@ -45,7 +45,6 @@ const questions = [
             "Apache",
             "Mozilla"]
     },
-    
     {
         type: "input",
         name: "questions",
@@ -72,13 +71,12 @@ function init() {
     inquirer.prompt(questions).then((userAnswers) => {
         
     const generatedText = generateMarkdown(userAnswers);
-
+    
         // write the output file
         fs.writeFile('README.md', generatedText, () => {
             console.log('Write success!')
         })
     })
-
 }
 
 
