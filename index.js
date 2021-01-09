@@ -73,7 +73,7 @@ function init() {
     
         // write the output file
         fs.writeFile('README.md', generatedText, () => {
-            console.log('Write success!')
+            console.log('Your Readme Will Generate!')
         })
     })
 }

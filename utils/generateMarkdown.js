@@ -27,7 +27,7 @@ function renderLicenseSection(license) {
   This page uses the [MIT](https://choosealicense.com/licenses/mit/) license.`;
   } else if (license === "Apache") {
     return `### License
-  This page uses the [None](https://choosealicense.com/licenses/isc/) license.`;
+  This page uses the [Apache](https://choosealicense.com/licenses/apache-2.0/) license.`;
   } else if (license === "None") {
     return "";
   }
