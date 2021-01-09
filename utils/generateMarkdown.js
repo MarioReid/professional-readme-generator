@@ -42,6 +42,8 @@ function generateMarkdown(data) {
   ## Questions
   ${data.questions}
 
+
+  Email me with any questions: ${data.email}
   `;
 }
 
