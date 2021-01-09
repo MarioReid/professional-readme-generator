@@ -43,12 +43,13 @@ const questions = [
         choices: [
             "MIT",
             "Apache",
-            "Mozilla"]
+            "Mozilla",
+            "None"]
     },
     {
         type: "input",
         name: "questions",
-        message: "What do I do if I have an issue? "
+        message: "What issue did you have? "
     },
     {
         type: "input",
