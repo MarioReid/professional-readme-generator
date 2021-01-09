@@ -3,6 +3,7 @@
 
   [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
+  ![Demo of README-generator](readme-demo.gif)
   ## Description
   This project generates a readme based on users data input. It was written using JavaScript in Node.
   
