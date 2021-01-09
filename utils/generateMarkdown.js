@@ -25,7 +25,13 @@ function generateMarkdown(data) {
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [License](#license)
-  - [Questions](#questions)`;
+  - [Questions](#questions)
+  
+  ## Installation
+  ${data.installation}
+
+  
+  `;
 }
 
 module.exports = generateMarkdown;
