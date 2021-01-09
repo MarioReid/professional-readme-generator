@@ -23,10 +23,34 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {}
 
+function renderLicenseSection(license) {
+  if (license === "MIT") {
+    return `### License
+  This page uses the [MIT](https://choosealicense.com/licenses/mit/) license.`;
+  } else if (license === "ISC") {
+    return `### License
+
+  This page uses the [ISC](https://choosealicense.com/licenses/isc/) license.`;
+  } else if (license === "GNU GPLv3") {
+    return `### License
+  This page uses the [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/) license.`;
+  } else if (license === "BSD 3-Clause") {
+    return `### License
+
+  This page uses the [BSD 3-Clause](https://choosealicense.com/licenses/bsd-3-clause/) license.`;
+  } else if (license === "none") {
+    return "";
+  }
+}
+
+
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.title}
+
+  ${renderLicenseBadge(data.license)}
 
   ## Description
   ${data.description}
@@ -37,7 +61,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [Tests](#tests)
-  - [License](#license)
+  - ${renderLicenseLink(data.license)}
   - [Questions](#questions)
   
   ## Installation
