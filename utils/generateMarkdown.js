@@ -24,10 +24,10 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license === "MIT") {
     return `### License
-  This page uses the [MIT](https://choosealicense.com/licenses/mit/) license.`;
+  [MIT](https://choosealicense.com/licenses/mit/) license`;
   } else if (license === "Apache") {
     return `### License
-  This page uses the [Apache](https://choosealicense.com/licenses/apache-2.0/) license.`;
+  [Apache](https://choosealicense.com/licenses/apache-2.0/) license`;
   } else if (license === "None") {
     return "";
   }
@@ -51,7 +51,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Contributing](#contributing)
   - [Tests](#tests)
-  - ${renderLicenseLink(data.license)}
+  ${renderLicenseLink(data.license)}
   - [Questions](#questions)
   
   ## Installation
