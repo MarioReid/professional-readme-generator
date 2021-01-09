@@ -42,9 +42,9 @@ function generateMarkdown(data) {
   ## Questions
   ${data.questions}
 
+  Find me on GitHub: [${data.username}](https://github.com/${data.username})
 
-  Email me with any questions: ${data.email}
-  `;
+  Email me with any questions: ${data.email}`;
 }
 
 module.exports = generateMarkdown;
